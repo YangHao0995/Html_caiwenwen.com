@@ -1,2 +1,2 @@
-# Html_caiwenwen.com
-静态网页
+﻿# Html_caiwenwen.com
+为了庆祝女友生日而制作的一个简单的静态页面。其中包含对其它开源代码的二次开发。
