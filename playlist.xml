@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+    <title>Ounage Playlist</title>
+    <creator>Dew</creator>
+    <link>http://www.blup.fr/</link>
+    <info>The Best Playlist for Testing</info>
+    <image>covers/tracklist.jpg</image>
+
+    <trackList>
+
+        <track>
+          <location>http://www.ikoumi.com/yunpan/QahkzgNIZggre/8a75.mp3</location>
+          <creator>梁静茹</creator>
+          <album> </album>
+          <title>梁静茹 - 情歌</title>
+          <annotation> </annotation>
+          <duration> </duration>
+          <image> </image>
+          <info></info>
+          <link></link>
+        </track>
+        
+        <track>
+          <location>http://www.ikoumi.com/yunpan/Qah2AFcqJ5DvU/0628.mp3</location>
+          <creator>Stewart Mac</creator>
+          <album></album>
+          <title>Stewart Mac - I Love You</title>
+          <annotation></annotation>
+          <duration></duration>
+          <image></image>
+          <info></info>
+          <link></link>
+        </track>
+        
+        <track>
+          <location>http://www.ikoumi.com/yunpan/Qah2rtIrbiy4p/4f41.mp3</location>
+          <creator>王力宏</creator>
+          <album></album>
+          <title>王力宏 - 大城小爱</title>
+          <annotation></annotation>
+          <duration></duration>
+          <image></image>
+          <info></info>
+          <link></link>
+        </track>
+
+
+        <track>
+          <location>http://www.ikoumi.com/yunpan/Qah2wkpukbAAS/aa78.mp3</location>
+          <creator>刘惜君</creator>
+          <album></album>
+          <title>刘惜君 - 我只在乎你</title>
+          <annotation></annotation>
+          <duration></duration>
+          <image></image>
+          <info></info>
+          <link></link>
+        </track>
+
+        <track>
+          <location>http://www.ikoumi.com/yunpan/Qah2Fx3bPeBjd/f4eb.mp3</location>
+          <creator>六甲官锭</creator>
+          <album></album>
+          <title>六甲官锭 - Me And You</title>
+          <annotation></annotation>
+          <duration></duration>
+          <image></image>
+          <info></info>
+          <link></link>
+        </track>
+
+
+    </trackList>
+</playlist>

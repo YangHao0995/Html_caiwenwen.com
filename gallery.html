@@ -1,0 +1,782 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+	<title>我的画廊 | Caiwenwen.com</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel=”Bookmark”  href=”favicon.ico” />
+    <link href="css/font.css" type="text/css" rel="stylesheet">
+	<link href="css/shared.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/gallery_demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/gallery_style.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a#pic_end_button").click(function(){
+	$("#pic_end").fadeIn(200);
+	$("#pic_end").fadeOut(3000);
+  });
+  $("a#pic_cover_button").click(function(){
+	$("#pic_cover").fadeIn(200);
+	$("#pic_cover").fadeOut(3000);
+  });
+});
+	function loop(){
+			$(function(){
+					if(document.getElementById("img_end").complete){
+						$("#load_picture").attr("style","display:none");
+						clearInterval(interval) ;
+					};
+			});
+	}
+	var interval = setInterval(loop, 50);
+</script>
+</head>
+
+<body>
+	<div id="load_picture">
+	  <div id="load_gif"><img src="http://caiwenwen.qiniudn.com/gallery_gif_gallery_loading.gif" width="300" height="400"  alt="正在努力为女朋友加载中！>_<..."/>
+      </div>
+    </div>
+	<div id="header">
+   	    	<div id="logo"><img src="img/logo.png" width="418" height="78"  alt="logo" /></div>
+    </div>
+	<div id="main">
+        <div class="container">
+			<!-- Codrops top bar -->
+            <div class="codrops-top">
+                <span class="right">
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+			<header>
+				<h1>Photo <span>Gallery</span></h1>
+				<h2>Photos about me</h2>
+			</header>
+			<section>
+				<ul class="lb-album">
+					<li>
+						<a href="#image-cover">
+							<img src="img/gallery/thumbs/cover.jpg" alt="cover">
+							<span>Cover</span>
+						</a>
+						<div class="lb-overlay" id="image-cover">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_cover.jpg" alt="cover" />
+							<div id="pic_cover"><p>这是第一张呢~</p></div>
+							<div>
+								<h3>Cover<span></span></h3>
+								<p>Sweet Love~</p>
+								<a href="#image-cover" id="pic_cover_button" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-39" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<!--<li>
+						<a href="#image-改这里上面也要改">
+							<img src="img/gallery/thumbs/改这里.jpg" alt="image改这里">
+							<span>Img改这里</span>
+						</a>
+						<div class="lb-overlay" id="image-改这里">
+							<img class="lbimg" src="img/gallery/full/改这里.jpg" alt="image改这里" />
+							<div>
+								<h3>Img改这里<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-加一" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-减一下面也要改" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>-->
+					<li>
+						<a href="#image-39">
+							<img src="img/gallery/thumbs/39.jpg" alt="image39">
+							<span>Img39</span>
+						</a>
+						<div class="lb-overlay" id="image-39">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_39.jpg" alt="image39" />
+							<div>
+								<h3>Img39<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-cover" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-38" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-38">
+							<img src="img/gallery/thumbs/38.jpg" alt="image38">
+							<span>Img38</span>
+						</a>
+						<div class="lb-overlay" id="image-38">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_38.jpg" alt="image38" />
+							<div>
+								<h3>Img38<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-39" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-37" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-37">
+							<img src="img/gallery/thumbs/37.jpg" alt="image37">
+							<span>Img37</span>
+						</a>
+						<div class="lb-overlay" id="image-37">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_37.jpg" alt="image37" />
+							<div>
+								<h3>Img37<span></span></h3>
+								<p>宁德<br />2014/09/06</p>
+								<a href="#image-38" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-36" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-36">
+							<img src="img/gallery/thumbs/36.jpg" alt="image36">
+							<span>Img36</span>
+						</a>
+						<div class="lb-overlay" id="image-36">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_36.jpg" alt="image36" />
+							<div>
+								<h3>Img36<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-37" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-35" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-35">
+							<img src="img/gallery/thumbs/35.jpg" alt="image35">
+							<span>Img35</span>
+						</a>
+						<div class="lb-overlay" id="image-35">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_35.jpg" alt="image35" />
+							<div>
+								<h3>Img35<span></span></h3>
+								<p>素描课~~<br />2014/09/01</p>
+								<a href="#image-36" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-34" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-34">
+							<img src="img/gallery/thumbs/34.jpg" alt="image34">
+							<span>Img34</span>
+						</a>
+						<div class="lb-overlay" id="image-34">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_34.jpg" alt="image34" />
+							<div>
+								<h3>Img34<span></span></h3>
+								<p>雯雯小时候可爱的证件照~</p>
+								<a href="#image-35" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-33" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-33">
+							<img src="img/gallery/thumbs/33.jpg" alt="image33">
+							<span>Img33</span>
+						</a>
+						<div class="lb-overlay" id="image-33">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_33.jpg" alt="image33" />
+							<div>
+								<h3>Img33<span></span></h3>
+								<p>阿发伯~ 2014年8月</p>
+								<a href="#image-34" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-32" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-32">
+							<img src="img/gallery/thumbs/32.jpg" alt="image32">
+							<span>Img32</span>
+						</a>
+						<div class="lb-overlay" id="image-32">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_32.jpg" alt="image32" />
+							<div>
+								<h3>Img32<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-33" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-31" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-31">
+							<img src="img/gallery/thumbs/31.jpg" alt="image31">
+							<span>Img31</span>
+						</a>
+						<div class="lb-overlay" id="image-31">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_31.jpg" alt="image31" />
+							<div>
+								<h3>Img31<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-32" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-30" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-30">
+							<img src="img/gallery/thumbs/30.jpg" alt="image30">
+							<span>Img30</span>
+						</a>
+						<div class="lb-overlay" id="image-30">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_30.jpg" alt="image30" />
+							<div>
+								<h3>Img30<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-31" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-29" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-29">
+							<img src="img/gallery/thumbs/29.jpg" alt="image29">
+							<span>Img29</span>
+						</a>
+						<div class="lb-overlay" id="image-29">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_29.jpg" alt="image29" />
+							<div>
+								<h3>Img29<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-30" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-28" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-28">
+							<img src="img/gallery/thumbs/28.jpg" alt="image28">
+							<span>Img28</span>
+						</a>
+						<div class="lb-overlay" id="image-28">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_28.jpg" alt="image28" />
+							<div>
+								<h3>Img28<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-29" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-27" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-27">
+							<img src="img/gallery/thumbs/27.jpg" alt="image27">
+							<span>Img27</span>
+						</a>
+						<div class="lb-overlay" id="image-27">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_27.jpg" alt="image27" />
+							<div>
+								<h3>Img27<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-28" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-26" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-26">
+							<img src="img/gallery/thumbs/26.jpg" alt="image26">
+							<span>Img26</span>
+						</a>
+						<div class="lb-overlay" id="image-26">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_26.jpg" alt="image26" />
+							<div>
+								<h3>Img26<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-27" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-25" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-25">
+							<img src="img/gallery/thumbs/25.jpg" alt="image25">
+							<span>Img25</span>
+						</a>
+						<div class="lb-overlay" id="image-25">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_25.jpg" alt="image25" />
+							<div>
+								<h3>Img25<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-26" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-24" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-24">
+							<img src="img/gallery/thumbs/24.jpg" alt="image24">
+							<span>Img24</span>
+						</a>
+						<div class="lb-overlay" id="image-24">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_24.jpg" alt="image24" />
+							<div>
+								<h3>Img24<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-25" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-23" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-23">
+							<img src="img/gallery/thumbs/23.jpg" alt="image23">
+							<span>Img23</span>
+						</a>
+						<div class="lb-overlay" id="image-23">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_23.jpg" alt="image23" />
+							<div>
+								<h3>Img23<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-24" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-22" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-22">
+							<img src="img/gallery/thumbs/22.jpg" alt="image22">
+							<span>Img22</span>
+						</a>
+						<div class="lb-overlay" id="image-22">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_22.jpg" alt="image22" />
+							<div>
+								<h3>Img22<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-23" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-21" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-21">
+							<img src="img/gallery/thumbs/21.jpg" alt="image21">
+							<span>Img21</span>
+						</a>
+						<div class="lb-overlay" id="image-21">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_21.jpg" alt="image21" />
+							<div>
+								<h3>Img21<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-22" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-20" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-20">
+							<img src="img/gallery/thumbs/20.jpg" alt="image20">
+							<span>Img20</span>
+						</a>
+						<div class="lb-overlay" id="image-20">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_20.jpg" alt="image20" />
+							<div>
+								<h3>Img20<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-21" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-19" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-19">
+							<img src="img/gallery/thumbs/19.jpg" alt="image19">
+							<span>Img19</span>
+						</a>
+						<div class="lb-overlay" id="image-19">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_19.jpg" alt="image19" />
+							<div>
+								<h3>Img19<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-20" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-18" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-18">
+							<img src="img/gallery/thumbs/18.jpg" alt="image18">
+							<span>Img18</span>
+						</a>
+						<div class="lb-overlay" id="image-18">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_18.jpg" alt="image18" />
+							<div>
+								<h3>Img18<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-19" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-17" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-17">
+							<img src="img/gallery/thumbs/17.jpg" alt="image17">
+							<span>Img17</span>
+						</a>
+						<div class="lb-overlay" id="image-17">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_17.jpg" alt="image17" />
+							<div>
+								<h3>Img17<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-18" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-16" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-16">
+							<img src="img/gallery/thumbs/16.jpg" alt="image16">
+							<span>Img16</span>
+						</a>
+						<div class="lb-overlay" id="image-16">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_16.jpg" alt="image16" />
+							<div>
+								<h3>Img16<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-17" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-15" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-15">
+							<img src="img/gallery/thumbs/15.jpg" alt="image15">
+							<span>Img15</span>
+						</a>
+						<div class="lb-overlay" id="image-15">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_15.jpg" alt="image15" />
+							<div>
+								<h3>Img15<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-16" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-14" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-14">
+							<img src="img/gallery/thumbs/14.jpg" alt="image14">
+							<span>Img14</span>
+						</a>
+						<div class="lb-overlay" id="image-14">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_14.jpg" alt="image14" />
+							<div>
+								<h3>Img14<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-15" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-13" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-13">
+							<img src="img/gallery/thumbs/13.jpg" alt="image13">
+							<span>Img13</span>
+						</a>
+						<div class="lb-overlay" id="image-13">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_13.jpg" alt="image13" />
+							<div>
+								<h3>Img13<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-14" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-12" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-12">
+							<img src="img/gallery/thumbs/12.jpg" alt="image12">
+							<span>Img12</span>
+						</a>
+						<div class="lb-overlay" id="image-12">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_12.jpg" alt="image12" />
+							<div>
+								<h3>Img12<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-13" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-11" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-11">
+							<img src="img/gallery/thumbs/11.jpg" alt="image11">
+							<span>Img11</span>
+						</a>
+						<div class="lb-overlay" id="image-11">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_11.jpg" alt="image11" />
+							<div>
+								<h3>Img11<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-12" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-10" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-10">
+							<img src="img/gallery/thumbs/10.jpg" alt="image10">
+							<span>Img10</span>
+						</a>
+						<div class="lb-overlay" id="image-10">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_10.jpg" alt="image10" />
+							<div>							
+								<h3>Img10<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-11" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-9" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-9">
+							<img src="img/gallery/thumbs/9.jpg" alt="image09">
+							<span>Img09</span>
+						</a>
+						<div class="lb-overlay" id="image-9">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_9.jpg" alt="image09" />
+							<div>							
+								<h3>Img09<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-10" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-8" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-8">
+							<img src="img/gallery/thumbs/8.jpg" alt="image08">
+							<span>Img08</span>
+						</a>
+						<div class="lb-overlay" id="image-8">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_8.jpg" alt="image08" />
+							<div>							
+								<h3>Img08<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-9" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-7" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-7">
+							<img src="img/gallery/thumbs/7.jpg" alt="image07">
+							<span>Img07</span>
+						</a>
+						<div class="lb-overlay" id="image-7">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_7.jpg" alt="image07" />
+							<div>							
+								<h3>Img07<span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-8" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-6" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-6">
+							<img src="img/gallery/thumbs/6.jpg" alt="image06">
+							<span>Img06</span>
+						</a>
+						<div class="lb-overlay" id="image-6">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_6.jpg" alt="image06" />
+							<div>							
+								<h3>Img06 <span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-7" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-5" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-5">
+							<img src="img/gallery/thumbs/5.jpg" alt="image05">
+							<span>Img05</span>
+						</a>
+						<div class="lb-overlay" id="image-5">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_5.jpg" alt="image05" />
+							<div>							
+								<h3>Img04 <span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-6" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-4" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-4">
+							<img src="img/gallery/thumbs/4.jpg" alt="image04">
+							<span>Img04</span>
+						</a>
+						<div class="lb-overlay" id="image-4">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_4.jpg" alt="image04" />
+							<div>							
+								<h3>Img04 <span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-5" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-3" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-3">
+							<img src="img/gallery/thumbs/3.jpg" alt="image03">
+							<span>Img03</span>
+						</a>
+						<div class="lb-overlay" id="image-3">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_3.jpg" alt="image03" />
+							<div>							
+								<h3>Img03 <span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-4" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-2" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-2">
+							<img src="img/gallery/thumbs/2.jpg" alt="image02">
+							<span>Img02</span>
+						</a>
+						<div class="lb-overlay" id="image-2">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_2.jpg" alt="image02" />
+							<div>							
+								<h3>Img02 <span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-3" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-1" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-1">
+							<img src="img/gallery/thumbs/1.jpg" alt="image01">
+							<span>Img01</span>
+						</a>
+						<div class="lb-overlay" id="image-1">
+							<img class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_1.jpg" alt="image01" />
+                            <div>							
+								<h3>Img01 <span></span></h3>
+								<p>Sweet Girl~</p>
+								<a href="#image-2" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-0" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-0">
+							<img src="img/gallery/thumbs/0.jpg" alt="image00">
+							<span>The end</span>
+						</a>
+						<div class="lb-overlay" id="image-0">
+							<img id="img_end"  class="lbimg" src="http://caiwenwen.qiniudn.com/gallery_full_0.jpg" alt="image00" />
+							<div id="pic_end"><p>最后一张了哦~</p></div>
+                            <div>							
+								<h3>The end</h3>
+								<p>Thanx~</p>
+								<a href="#image-1" class="lb-prev">Prev</a>
+								<a href="#page" class="lb-xclose">x Close</a>
+								<a href="#image-0" id="pic_end_button" class="lb-next">Next</a>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+        </div>
+	</div>
+	<div id="copyright2">
+    <p>Design by Codrops</p>
+    </div> 
+</body>
+</html>
