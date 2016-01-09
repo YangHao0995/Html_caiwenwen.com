@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+	<title>谈恋爱啦 | Caiwenwen.com</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/font.css" type="text/css" rel="stylesheet">
+	<link href="css/shared.css" type="text/css" rel="stylesheet">
+	<link href="css/lovestory.css" type="text/css" rel="stylesheet">
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+	<!--这个页面代码是借用了另一个页面的代码再自己稍微改动后制作的。因此保留了原作者版权。原作者项目主页为love.hackerzhou.me-->
+</head>
+
+<body>
+	<div id="mainDiv">
+	<div id="header">
+   	    	<div id="logo"><img src="img/logo.png" width="418" height="78"  alt="logo" /></div>
+    </div>
+    	<div id="content">
+        	<div id="code">
+                    <p class=pad>不知道，我是怎样被你<span class="blue"> [迷住]          </span></p>
+                    <p class=pad>在那个冲动的夏天，向你<span class="blue"> [告白]          </span></p>
+                    <p class=pad>然后第一次，我开始不可救药地<span class="blue"> [追求] </span>一个女孩          </p>
+                    <p class=pad>我慢慢地<span class="blue"> [习惯] </span>了生活中开始布满你的痕迹          </p>
+                  <div id="xiguanle">
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>每天关注着你生活的每一个细节          </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>你换着各种让我挺郁闷的称呼来叫我，还叫得那么甜          </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>一天的计划总是突然被你的各种琐事打乱          </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>你总是只有在有事求我时才对我撒娇          </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>在你把事情弄得一团糟的时候给你擦屁股          </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>板着脸说你贪吃、挑食、熬夜，然后苦着脸吃掉你不吃的蔬菜          </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>过节前好几天你就厚着脸皮向我讨礼物，我还不知道要过什么节          </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>吵架时常常憋着一肚子气跟你道歉，然后你还不理我          </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>就算吵得再凶，最后你也总舍不得我离开        </span></p>
+                    <p class=pad><span class="xiguan">-<span class="purple">习惯了 </span>不能没有你的日子</span></p>
+                  </div>
+                    <p class=pad>我也时常<span class="blue"> [憧憬] </span>着我们将来会怎样在一起，过着怎样的生活          </p>
+                    <p class=pad>你说你不惧怕那走向未来的路有多坎坷，你愿意陪我<span class="blue"> [一起走]</span>          </p>
+                    <p class=pad>那么我便会带着你给我的这份勇气，去<span class="blue"> [创造] </span>属于我们的未来      </p>
+                    <p class=pad><span class=darling>亲爱的，我需要你，我们的未来需要你       </span></p>
+                    <p class=pad><span class=darling>你是我的阳光，有你便是晴天          </span></p>
+                    <p class="pad"><span class="last">——纪念女友蔡雯雯19周岁生日暨恋爱2周年</span></p>
+            </div>
+            <div id="loveHeart">
+                  <canvas id="garden"></canvas>
+                    <div id="words">
+                        <div id="messages">
+                            Darling, since the day I show my love
+                            <div id="elapseClock"></div>
+                        </div>
+                        <div id="loveu">
+                            Love u forever and ever.<br/>
+                            <div class="signature">- Yours, hao.</div>
+                        </div>
+                    </div>
+            </div>
+		</div>
+		<div id="copyright2"><br />
+			Copyright © 2014 <a href="http://hackerzhou.me/" target="_blank" style="color:#999">hackerzhou.me</a> 2009-2014
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2012, 09, 17);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>

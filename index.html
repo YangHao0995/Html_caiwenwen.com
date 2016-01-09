@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+
+	<title>蔡雯雯 | Caiwenwen.com</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="蔡雯雯,雯雯,caiwenwen">
+	<meta name="description" content="谨以此献给我的女朋友蔡雯雯，纪念她20岁生日暨我向她告白2周年。">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel=”Bookmark”  href=”favicon.ico” />
+    <link href="css/font.css" type="text/css" rel="stylesheet">
+    <link href="css/shared.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+/*函数1，自动调整iframe高度*/
+       function autoHeight(){
+            var iframe = document.getElementById("Iframe");
+			if(iframe.Document){//ie自有属性
+                iframe.style.height = iframe.Document.documentElement.scrollHeight + 20 + 'px';
+            }else if(iframe.contentDocument){//ie,firefox,chrome,opera,safari
+                iframe.height = iframe.contentDocument.body.offsetHeight + 20 + 'px';
+            };
+			$("#Iframe").contents().find(".lbimg").css('max-height',((($(window).width())*2/5) + 'px'));
+			/*控制gallery页面中图片高度*/
+        }
+//函数2，播放器隐藏、显示控制
+			$(document).ready(function(){
+			$("#player_flip").mouseover(function(){
+				$("#player_container").animate({marginTop:'0px'});
+			  });
+			});//鼠标悬停 显示/隐藏
+			
+			$(document).ready(function(){
+			  $("#player_container").mouseleave(function(){
+				$("#player_container").animate({marginTop:'-215px'});
+			  });
+			});//鼠标离开 隐藏
+			
+    </script> 
+</head>
+
+<body>
+    <div id="manubox" >
+        <iframe src="home-manu.html" name="home-manu" id="home-manu" frameborder="0" width="614px" height="70px" scrolling="no"></iframe>
+    </div>
+    <iframe src="home.html" name="Iframe" id="Iframe" frameborder="0" width="100%" height="1300px" onload="autoHeight()" scrolling="no"></iframe>
+    <div id="copyright">
+      <p>Copyright © 2014 <a href="boyfriend-manu.html" target="home-manu" style="color:#999">YangHao</a>. All rights reserved.</p>
+    </div>
+	<div id="player_container">
+        <div id="player">
+          <object type="application/x-shockwave-flash" data="dewplayer-playlist.swf" width="240" height="200" id="dewplayer" name="dewplayer">
+            <param name="wmode" value="transparent" />
+            <param name="movie" value="dewplayer-playlist.swf" />
+            <param name="flashvars" value="showtime=true&autostart=1&autoreplay=true&volume=30&xml=playlist.xml" />
+            </object>
+        </div>
+        <div id="player_flip_position">
+            <p id="player_flip">Music Player&nbsp;<img src="img/sonic.gif" width="15" height="13" id="sonic" /></p>
+    	</div>
+    </div>
+</body>
+</html>

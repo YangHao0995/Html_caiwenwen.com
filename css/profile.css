@@ -1,0 +1,74 @@
+body{
+	background:url(../img/bg.jpg);
+	background-repeat:repeat;
+}
+#main{
+	position:relative;
+	height:800px;
+}
+#center{
+	position:absolute;
+	top:0px;left:50%;
+	margin-left:-683px;
+	width:1366px;
+}
+#profile{
+	float:left;
+	background:url(../img/lines.png);
+	background-position:center;
+	padding-left:40px;
+	margin-left:60px;
+	background-repeat:no-repeat;
+	font-family:"Microsoft YaHei","微软雅黑","黑体","SimHei";
+	font-size:18px;
+	color: #666;
+	text-shadow: 1px 1px #CCC;
+}
+#wanted{
+	float:left;
+	position:relative;
+	margin-top:20px;
+	width:206px;
+	height:320px;
+}
+#loading_wanted_pic{
+	position:absolute;
+	top:50%;left:50%;
+	margin:-10px 0 0 30px;
+	padding:0;
+	z-index:-1;
+}
+#tb1{
+	padding-left:70px;
+}
+#tb2{
+	padding-top:5px;
+	padding-left:30px;
+	width:700px;
+}
+.trhigh{
+	height: 45px;
+}
+#rightpicture_container{
+	position:relative;
+	margin-left:730px;
+	width:543px;
+	height:841px;
+}
+#loading_rightpic{
+	position:absolute;
+	top:400px;left:250px;
+	margin:0;
+	padding:0;
+	z-index:0;
+}
+#rightpicture{
+	position:absolute;
+	top:0px;left:0px;
+	margin:0;padding:0;
+	background:url(../img/profile-right.jpg);
+	background-repeat:no-repeat;
+	width:543px;
+	height:841px;
+	z-index:1;
+}
